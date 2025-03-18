@@ -191,7 +191,7 @@ button:hover {
 
 /* home Section Responsive  */
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .home-content h1 {
     font-size: 40px;
   }
@@ -216,7 +216,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
   .home-section {
     flex-direction: column;
     text-align: center;
@@ -271,7 +271,9 @@ button:hover {
     width: 70%;
     height: auto;
   }
-}
+} */
+
+
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -581,7 +583,7 @@ button:hover {
 }
 
 /* media query for crtificate section  */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .certificates-section {
       flex-direction: column;
       text-align: center;
@@ -590,5 +592,29 @@ button:hover {
 
   .certificates-container {
       flex-direction: column;
+  }
+} */
+
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* media query  */
+
+@media (max-width:799px){
+
+}
+
+@media (max-width:477px){
+  .home-section{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+  }
+  .container{
+    width: 100% !important;
+    max-width: none !important;
+    border: 2px solid red;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
