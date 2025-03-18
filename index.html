@@ -17,6 +17,15 @@
       <div class="header-div">
         <!-- <a href="">Gauri</a> -->
         <h2 class="logo">Gauri</h2>
+        <!-- this is hamburgur icon and it is hidden by default , and it will be visible on small screen 
+        <div class="menu-icon">&#9776;</div> -->
+
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
         <div class="nav-div">
           <ul>
             <li><a href="">Home</a></li>
@@ -205,5 +214,16 @@
 
         </div>
     </section>
+
+
+    <script>
+ const hamburger = document.querySelector(".hamburger-menu");
+const navMenu = document.querySelector(".nav-div");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active"); // Show/hide menu
+  hamburger.classList.toggle("active"); // Animate hamburger icon
+});
+    </script>
   </body>
 </html>
