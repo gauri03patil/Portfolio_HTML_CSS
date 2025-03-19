@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Spartan", sans-serif;
+  /* font-family: "Spartan", sans-serif; */
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   background-color: black;
@@ -19,6 +25,15 @@ body {
 
 header {
   height: 90px;
+  background-color: #222;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.header-div img{
+  /* height: 100%; */
+  height: 60px;
+  width: auto;
 }
 
 .header-div {
@@ -107,27 +122,19 @@ a:hover {
   }
 }
 
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
   .container {
-    max-width: 100%; /* Prevents unnecessary right margin */
-    padding: 15px; /* Adjusted for better spacing */
+    max-width: 100%; 
+    padding: 15px; 
   }
-  /* .header-div{
-   max-width: 90%;
-    background-color: blueviolet;
-  } */
-}
-
+ 
+} */
+/* 
 @media (max-width: 360px) {
   .container {
     padding: 10px;
   }
-
-  /* .home-content,
-  .about-content {
-    text-align: center;
-  } */
-}
+} */
 
 /* @media (max-width: 768px) {
   .menu-icon {
@@ -274,90 +281,6 @@ button:hover {
   box-shadow: 0 0 80px #ed47f3, 0 0 100px #ff00ff inset;
   transform: scale(1.1);
 }
-
-/* home Section Responsive  */
-
-/* @media screen and (max-width: 1024px) {
-  .home-content h1 {
-    font-size: 40px;
-  }
-
-  .home-content h3 {
-    font-size: 24px;
-  }
-
-  .home-content p {
-    font-size: 14px;
-    max-width: 100%;
-  }
-
-  .home-content,
-  .image-content {
-    width: 100%;
-  }
-
-  .image-content img {
-    width: 80%;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .home-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .home-content h1 {
-    font-size: 36px;
-  }
-
-  .home-content h3 {
-    font-size: 22px;
-  }
-
-  .home-content p {
-    font-size: 14px;
-    padding: 0 10px;
-  }
-
-  .image-content {
-    justify-content: center;
-  }
-
-  .image-content img {
-    width: 60%;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .home-content h1 {
-    font-size: 28px;
-  }
-
-  .home-content h3 {
-    font-size: 18px;
-  }
-
-  .home-content p {
-    font-size: 12px;
-  }
-
-  .social-icons a {
-    font-size: 18px;
-  }
-
-  button {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
-
-  .image-content img {
-    width: 70%;
-    height: auto;
-  }
-} */
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -717,6 +640,10 @@ button:hover {
   padding: 40px 0;
   text-align: center;
   /* background-color: bisque; */
+
+  h2{
+    font-size: 32px;
+  }
 }
 .work-list {
   /* display: grid;
@@ -817,6 +744,63 @@ button:hover {
 .btn:hover {
   background: #ed47f3;
 }
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+/* contact page  */
+
+.contact-container {
+  /* background-color: pink; */
+  height: 80vh;
+  display: flex; /* Add flexbox to center */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  padding: 20px;
+  background: linear-gradient(135deg, #1a1a1a, #222222);
+
+}
+.second-container{
+
+  max-width: 800px;
+  width: 100%;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+
+  h2 {
+    text-align: center;
+    color: #ed47f3;
+    margin-bottom: 15px;
+}
+}
+.form-group {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #ed47f3;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ed47f3;
+  background: #333;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+
+
 /* ///////////////////////////////////////////////////////////////////// */
 
 /* media query  */
@@ -858,6 +842,7 @@ button:hover {
     font-weight: 900;
     margin-top: 20px;
   }
+
 
   /* about section media query  */
 
@@ -934,6 +919,25 @@ button:hover {
   .work {
     width: calc(100% - 50px); /* One item per row on smaller screens */
   }
+
+  /* contact section  */
+
+  .contact-container {
+    max-width: 80%;
+    padding: 18px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+input, textarea {
+    font-size: 15px;
+}
+
+button {
+    font-size: 17px;
+}
 }
 
 @media (max-width: 477px) {
@@ -944,6 +948,9 @@ button:hover {
   }
   .home-content {
     width: 100%;
+  }
+  .header-div img{
+    height: 30px;
   }
 
   .home-content h1 {
@@ -978,6 +985,41 @@ button:hover {
     width: 200px;
   }
 
+  .nav-div{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .nav-div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+  }
+
+  .nav-div.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .hamburger-menu {
+    display: flex; /* Show the hamburger on mobile */
+  }
+
+  .header-div {
+    padding: 10px 20px; /* Reduce padding for a tighter layout */
+  }
+  .nav-div ul {
+    gap: 20px; /* Reduce spacing between nav items */
+
+    a {
+      font-size: 18px; /* Slightly reduce font size */
+    }
+  }
   /* for about section media query  */
 
   .about-section {
@@ -1053,7 +1095,7 @@ button:hover {
     width: 90%; /* Takes more width for small screens */
   }
 
-/* for project section  */
+  /* for project section  */
 
   .work-list {
     gap: 30px; /* Reduce gap for better layout on extra small screens */
@@ -1062,4 +1104,27 @@ button:hover {
     width: 100%; /* Full width on very small screens */
     max-width: 100%;
   }
+
+  /* contact section  */
+
+  .contact-container {
+    padding: 15px;
 }
+
+h2 {
+    font-size: 20px;
+}
+
+input, textarea {
+    font-size: 14px;
+}
+
+button {
+    font-size: 16px;
+}
+}
+
+
+/* dark light mode  */
+
+

@@ -13,10 +13,11 @@
   </head>
   <body>
     <!-- header section  -->
-    <header class="container">
+    <header class="container" id="home">
       <div class="header-div">
         <!-- <a href="">Gauri</a> -->
-        <h2 class="logo">Gauri</h2>
+        <!-- <h2 class="logo">Gauri</h2> -->
+         <img src="./images/gauri_logo.jpeg" alt="logo">
         <!-- this is hamburgur icon and it is hidden by default , and it will be visible on small screen 
         <div class="menu-icon">&#9776;</div> -->
 
@@ -28,11 +29,14 @@
 
         <div class="nav-div">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
+            <li class="icon-sum"><a href=""></a>☀️</li>
+            <li class="icon-moon"><a href=""></a>🌙</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -70,7 +74,9 @@
               ><i class="fa-brands fa-x-twitter"></i
             ></a>
           </div>
-          <button>Dowload CV</button>
+          <a href="./Gauri Patil Resume.pdf" download="gauri_patil_cv">
+            <button>Dowload CV</button>
+          </a>
         </div>
         <div class="image-content">
           <img src="./images/image-1-portfolio.jpg" alt="" />
@@ -79,7 +85,7 @@
     </section>
 
     <!-- about section  -->
-    <section class="container about-section">
+    <section class="container about-section" id="about">
       <div class="image-about">
         <img src="./images/image_2_port.JPG" alt="myimage about" />
       </div>
@@ -99,7 +105,7 @@
 
     <!-- skill section  -->
 
-    <section class="container sills-container">
+    <section class="container sills-container" id="skills" >
         <h2>Skill & Education</h2>
         <div class="skill-content">
             <div class="skills">
@@ -183,7 +189,7 @@
 
     <!-- Certificate section  -->
 
-    <section class="container certificates-section">
+    <section class="container certificates-section" id="certification">
         <div class="certificates-info">
             <h2>Check Out</h2>
             <h1>MY CERTIFICATE</h1>
@@ -197,13 +203,13 @@
                 <img src="https://png.pngtree.com/png-clipart/20210718/original/pngtree-graduation-certificate-border-vector-pink-gold-and-silver-color-png-image_6531062.jpg" alt="certificate">
                 <h3>Java Programming</h3>
                 <p>Udemy</p>
-                <a href="" target="_blank" class="download-btn ">View Certificate</a>
+                <a href="./Certificates/Java_Programming_Certificate.pdf" target="_blank" class="download-btn ">View Certificate</a>
             </div>
             <div class="certificate-card">
                 <img src="https://png.pngtree.com/png-clipart/20210718/original/pngtree-graduation-certificate-border-vector-pink-gold-and-silver-color-png-image_6531062.jpg" alt="certificate">
-                <h3>Java Programming</h3>
+                <h3>Spring Boot</h3>
                 <p>Udemy</p>
-                <a href="" target="_blank" class="download-btn ">View Certificate</a>
+                <a href="./images/gauri_logo.jpeg" target="_blank" class="download-btn ">View Certificate</a>
             </div>
             <div class="certificate-card">
                 <img src="https://png.pngtree.com/png-clipart/20210718/original/pngtree-graduation-certificate-border-vector-pink-gold-and-silver-color-png-image_6531062.jpg" alt="certificate">
@@ -217,18 +223,15 @@
 
     <!-- project section  -->
 
-    <section class="container project-container">
+    <section class="container project-container" id="project">
       <h2>Projects</h2>
       <div class="work-list">
         <div class="work">
           <img src="./images/work-1.png" alt="">
           <div class="layer">
-            <h3>Project name</h3>
-            <p>In essence, the grid structure visually organizes content, while
-              the navigation bar streamlines navigation across different
-              sections of the app. Additionally, the footer offers
-              supplementary navigation options and access to crucial</p>
-              <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
+            <h3>PARALLAX EFFECT</h3>
+            <p>The Parallax Effect creates an illusion of depth by making the background move slower than the foreground while scrolling. This technique enhances visual appeal and provides a dynamic user experience.</p>
+              <a href="http://127.0.0.1:5500/Images%20Parallax/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
                 ></a>
           </div>
         </div>
@@ -236,14 +239,11 @@
         <!-- second div  -->
 
         <div class="work">
-          <img src="./images/work-1.png" alt="">
+          <img src="./images/work-2.png" alt="">
           <div class="layer">
-            <h3>Project name</h3>
-            <p>In essence, the grid structure visually organizes content, while
-              the navigation bar streamlines navigation across different
-              sections of the app. Additionally, the footer offers
-              supplementary navigation options and access to crucial</p>
-              <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
+            <h3>SHAKE BUTTON</h3>
+            <p>A shaking button effect adds a subtle animation that grabs user attention. This can be achieved using CSS keyframes to create a slight side-to-side movement.</p>
+              <a href="http://127.0.0.1:5500/Animation%20Shake%20-%20Rotate/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
                 ></a>
           </div>
         </div>
@@ -251,28 +251,22 @@
         <!-- third div  -->
 
         <div class="work">
-          <img src="./images/work-1.png" alt="">
+          <img src="./images/work-3.png" alt="">
           <div class="layer">
-            <h3>Project name</h3>
-            <p>In essence, the grid structure visually organizes content, while
-              the navigation bar streamlines navigation across different
-              sections of the app. Additionally, the footer offers
-              supplementary navigation options and access to crucial</p>
-              <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
+            <h3>BOUNCE ANIMATION</h3>
+            <p>The bounce animation creates a lively effect where an element moves up and down, mimicking a bouncing motion. This can be achieved using CSS keyframes with transform: translateY() for smooth movement.</p>
+              <a href="http://127.0.0.1:5500/Animation%20Bounce%20Web/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
                 ></a>
           </div>
         </div>
 
         <!-- fourth div  -->
         <div class="work">
-          <img src="./images/work-1.png" alt="">
+          <img src="./images/work-3.png" alt="">
           <div class="layer">
-            <h3>Project name</h3>
-            <p>In essence, the grid structure visually organizes content, while
-              the navigation bar streamlines navigation across different
-              sections of the app. Additionally, the footer offers
-              supplementary navigation options and access to crucial</p>
-              <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
+            <h3>CIRCLE ROTATION</h3>
+            <p>The circle rotation animation makes an element rotate continuously or at intervals in a circular motion. This effect is achieved using CSS keyframes</p>
+              <a href="http://127.0.0.1:5500/Animation%20Circle%20Rotate/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
                 ></a>
           </div>
         </div>
@@ -282,12 +276,9 @@
         <div class="work">
           <img src="./images/work-1.png" alt="">
           <div class="layer">
-            <h3>Project name</h3>
-            <p>In essence, the grid structure visually organizes content, while
-              the navigation bar streamlines navigation across different
-              sections of the app. Additionally, the footer offers
-              supplementary navigation options and access to crucial</p>
-              <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
+            <h3>PORTFOLIO</h3>
+            <p>A portfolio project is a personal website showcasing your skills, projects, and experience. It typically includes sections like About Me, Projects, Skills, and Contact, with a visually appealing and responsive design</p>
+              <a href="http://127.0.0.1:5502/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
                 ></a>
           </div>
         </div>
@@ -295,7 +286,7 @@
         <!-- sixth div  -->
 
         <div class="work">
-          <img src="./images/work-1.png" alt="">
+          <img src="./images/work-2.png" alt="">
           <div class="layer">
             <h3>Project name</h3>
             <p>In essence, the grid structure visually organizes content, while
@@ -312,6 +303,29 @@
     </section>
 
 
+  <!-- contact section  -->
+
+  <section class="container contact-container" id="contact">
+  <div class="second-container">
+    <h2>Contact Me</h2>
+    <Form >
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Your message..."></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+    </Form>
+  </div>
+
+  </section>
     <script>
  const hamburger = document.querySelector(".hamburger-menu");
 const navMenu = document.querySelector(".nav-div");
