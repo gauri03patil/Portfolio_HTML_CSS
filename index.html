@@ -23,14 +23,20 @@
         </div>
         <div class="nav-div">
           <ul>
-            <li class="icon sum"><a href=""></a>☀️</li>
-            <li class="icon moon"><a href=""></a>🌙</li>
+            
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#certification">Certification</a></li>
             <li><a href="#project">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li class="theme-toggle">
+              <input type="checkbox" id="theme-checkbox">
+  <label for="theme-checkbox" class="toggle-label">
+    <span class="icon sun">☀️</span>
+    <span class="icon moon">🌙</span>
+  </label>
+            </li>
           </ul>
         </div>
       </div>
@@ -144,14 +150,15 @@
                         <div class="progress java"></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-title">
-                            <span><i class="fa-solid fa-database icons"></i>SQL</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress sql"></div>
-                        </div>
-                    </div>
+                      <div class="skill-title">
+                          <span><i class="fa-brands fa-react icons"></i> SQL</span>
+                          <span>75
+                            %</span>
+                      </div>
+                      <div class="progress-bar">
+                          <div class="progress sql"></div>
+                      </div>
+                  </div>
                 </div>
             </div>
 
@@ -189,22 +196,22 @@
         <div class="certificate-container">
 
             <div class="certificate-card">
-                <img src="https://png.pngtree.com/png-clipart/20210718/original/pngtree-graduation-certificate-border-vector-pink-gold-and-silver-color-png-image_6531062.jpg" alt="certificate">
+                <img src="./images/Certificate1_java.jpg" alt="certificate">
                 <h3>Java Programming</h3>
                 <p>Udemy</p>
-                <a href="./Certificates/Java_Programming_Certificate.pdf" target="_blank" class="download-btn ">View Certificate</a>
+                <a href="./certificatefiles/Java_Programming_Certificate.pdf" target="_blank" class="download-btn ">View Certificate</a>
             </div>
             <div class="certificate-card">
-                <img src="https://png.pngtree.com/png-clipart/20210718/original/pngtree-graduation-certificate-border-vector-pink-gold-and-silver-color-png-image_6531062.jpg" alt="certificate">
+                <img src="./images/Certificate3_javascript.jpg" alt="certificate">
+                <h3>JavaScript</h3>
+                <p>Linkedin</p>
+                <a href="./certificatefiles/CertificateOfCompletion_JAVASCRIPT_portfolio.pdf" target="_blank" class="download-btn ">View Certificate</a>
+            </div>
+            <div class="certificate-card">
+                <img src="./images/Spring Boot_Certificate2.jpg" alt="certificate">
                 <h3>Spring Boot</h3>
                 <p>Udemy</p>
-                <a href="./images/gauri_logo.jpeg" target="_blank" class="download-btn ">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <img src="https://png.pngtree.com/png-clipart/20210718/original/pngtree-graduation-certificate-border-vector-pink-gold-and-silver-color-png-image_6531062.jpg" alt="certificate">
-                <h3>Java Programming</h3>
-                <p>Udemy</p>
-                <a href="" target="_blank" class="download-btn ">View Certificate</a>
+                <a href="./certificatefiles/Spring Boot_Certificate.pdf" target="_blank" class="download-btn ">View Certificate</a>
             </div>
 
         </div>
@@ -216,7 +223,8 @@
       <h2>Projects</h2>
       <div class="work-list">
         <div class="work">
-          <img src="./images/work-1.png" alt="">
+          <!-- <img src="./images/work-1.png" alt=""> -->
+          <img src="./images//Projects/project1.png" alt="">
           <div class="layer">
             <h3>PARALLAX EFFECT</h3>
             <p>The Parallax Effect creates an illusion of depth by making the background move slower than the foreground while scrolling. This technique enhances visual appeal and provides a dynamic user experience.</p>
@@ -228,11 +236,11 @@
         <!-- second div  -->
 
         <div class="work">
-          <img src="./images/work-2.png" alt="">
+          <img src="./images/Projects/project2.png" alt="">
           <div class="layer">
-            <h3>SHAKE BUTTON</h3>
-            <p>A shaking button effect adds a subtle animation that grabs user attention. This can be achieved using CSS keyframes to create a slight side-to-side movement.</p>
-              <a href="http://127.0.0.1:5500/Animation%20Shake%20-%20Rotate/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
+            <h3>Landing Page</h3>
+            <p>I have created a landing page using JavaScript, which is sourced from an existing e-library. I customized it to fit my project requirements while keeping its core structure intact</p>
+              <a href="http://127.0.0.1:5500/landing%20Page/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
                 ></a>
           </div>
         </div>
@@ -240,10 +248,10 @@
         <!-- third div  -->
 
         <div class="work">
-          <img src="./images/work-3.png" alt="">
+          <img src="./images/Projects/project3.png" alt="">
           <div class="layer">
-            <h3>BOUNCE ANIMATION</h3>
-            <p>The bounce animation creates a lively effect where an element moves up and down, mimicking a bouncing motion. This can be achieved using CSS keyframes with transform: translateY() for smooth movement.</p>
+            <h3>TIME BASE EVENT</h3>
+            <p>I have created a time-based event using JavaScript that triggers an action after a set interval. </p>
               <a href="http://127.0.0.1:5500/Animation%20Bounce%20Web/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
                 ></a>
           </div>
@@ -251,11 +259,11 @@
 
         <!-- fourth div  -->
         <div class="work">
-          <img src="./images/work-3.png" alt="">
+          <img src="./images/Projects/project4.png" alt="">
           <div class="layer">
-            <h3>CIRCLE ROTATION</h3>
-            <p>The circle rotation animation makes an element rotate continuously or at intervals in a circular motion. This effect is achieved using CSS keyframes</p>
-              <a href="http://127.0.0.1:5500/Animation%20Circle%20Rotate/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
+            <h3>TODO List</h3>
+            <p>To-Do List is a simple task management app built with HTML, CSS, and JavaScript. It lets users add, delete, and mark tasks as complete</p>
+              <a href="http://127.0.0.1:5501/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
                 ></a>
           </div>
         </div>
@@ -263,7 +271,8 @@
         <!-- fifth div  -->
 
         <div class="work">
-          <img src="./images/work-1.png" alt="">
+          <!-- <img src="./images/work-1.png" alt=""> -->
+          <img src="./images/Projects/Project5.png" alt="">
           <div class="layer">
             <h3>PORTFOLIO</h3>
             <p>A portfolio project is a personal website showcasing your skills, projects, and experience. It typically includes sections like About Me, Projects, Skills, and Contact, with a visually appealing and responsive design</p>

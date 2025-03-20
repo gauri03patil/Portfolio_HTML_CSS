@@ -221,6 +221,42 @@ button:hover {
   box-shadow: 0 0 80px #ed47f3, 0 0 100px #ff00ff inset;
   transform: scale(1.1);
 }
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ed47f3; /* Pink border */
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Hide Checkbox */
+#theme-checkbox {
+  display: none;
+}
+
+/* Label Styling */
+.toggle-label {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+/* Default Dark Mode - Show Moon */
+.sun {
+  display: none;
+}
+
+/* Light Mode - When Checkbox is Checked */
+#theme-checkbox:checked + .toggle-label .moon {
+  display: none;
+}
+
+#theme-checkbox:checked + .toggle-label .sun {
+  display: inline;
+}
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -310,7 +346,7 @@ button:hover {
 
 /* skill content  */
 .sills-container {
-  height: 90vh;
+  height: 100vh;
   /* background-color: bisque; */
   background: rgb(44, 43, 43);
   padding: 30px;
@@ -418,8 +454,8 @@ button:hover {
 .progress.tailwind {
   width: 87%;
 }
-.progress .sql {
-  width: 60%;
+.progress.sql {
+  width: 75%;
 }
 
 .icons {
@@ -898,6 +934,9 @@ textarea {
   .education-item p {
     font-size: 18px;
   }
+  .sills-container{
+    height: 80vh;
+  }
 
   /* for certificate section  */
   .certificates-section {
@@ -921,6 +960,7 @@ textarea {
   /* contact section  */
 
   .contact-container {
+    height: 60vh;
     max-width: 80%;
     padding: 18px;
   }
@@ -983,7 +1023,7 @@ textarea {
     height: 200px;
     width: 200px;
   }
-
+/* 
   .nav-div {
     display: none;
     position: absolute;
@@ -993,6 +1033,23 @@ textarea {
     flex-direction: column;
     align-items: center;
     padding: 10px 0;
+  } */
+  .nav-div {
+    display: none;
+    position: absolute;
+    top: 80px; 
+    left: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .nav-div ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nav-div.active {
+    display: block;
   }
   .nav-div ul {
     display: flex;
@@ -1023,17 +1080,21 @@ textarea {
 
   .about-section {
     display: flex;
-    height: 120vh;
+    height: 150vh;
     /* background-color: greenyellow; */
     flex-direction: column-reverse;
+
   }
   .image-about {
     /* width: 50%; */
+    /* height: 30%; */
     width: 100%;
     align-content: center;
+    /* background-color: aqua; */
   }
   .image-about img {
     margin-left: 63px;
+
   }
   .about-content {
     /* background-color: red; */
@@ -1057,6 +1118,7 @@ textarea {
 
   /* skills and education section  */
   .sills-container {
+    height: 120vh;
     h2 {
       font-size: 32px;
       transition: 1s linear;
@@ -1103,6 +1165,9 @@ textarea {
     width: 100%; /* Full width on very small screens */
     max-width: 100%;
   }
+  .work img{
+    height: 300px;
+  }
 
   /* contact section  */
 
@@ -1127,3 +1192,13 @@ textarea {
 .nav-div .icons {
   font-size: 30px;
 }
+
+
+
+
+
+
+.work img{
+  height: 100%;
+}
+
