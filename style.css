@@ -346,7 +346,8 @@ button:hover {
 
 /* skill content  */
 .sills-container {
-  height: 100vh;
+  /* height: 100vh; */
+  height: auto;
   /* background-color: bisque; */
   background: rgb(44, 43, 43);
   padding: 30px;
@@ -882,7 +883,7 @@ textarea {
 
   .about-section {
     display: flex;
-    height: 100vh;
+    height: 125vh;
     flex-direction: column-reverse;
   }
   .about-content {
@@ -935,7 +936,7 @@ textarea {
     font-size: 18px;
   }
   .sills-container{
-    height: 80vh;
+    /* height: 80vh; */
   }
 
   /* for certificate section  */
@@ -976,6 +977,12 @@ textarea {
 
   button {
     font-size: 17px;
+  }
+
+  /* footer section  */
+
+  .footer-container{
+    height: 20vh;
   }
 }
 
@@ -1044,10 +1051,10 @@ textarea {
     text-align: center;
     padding: 10px 0;
   }
-  .nav-div ul {
+  /* .nav-div ul {
     flex-direction: column;
     gap: 20px;
-  }
+  } */
   .nav-div.active {
     display: block;
   }
@@ -1070,7 +1077,8 @@ textarea {
     padding: 10px 20px; /* Reduce padding for a tighter layout */
   }
   .nav-div ul {
-    gap: 20px; /* Reduce spacing between nav items */
+
+    margin-left: 123px;
 
     a {
       font-size: 18px; /* Slightly reduce font size */
@@ -1115,10 +1123,14 @@ textarea {
       overflow-wrap: break-word;
     }
   }
+  .image-about img {
+    /* margin-left: 63px; */
+    height: 63%;
+}
 
   /* skills and education section  */
   .sills-container {
-    height: 120vh;
+    height: auto;
     h2 {
       font-size: 32px;
       transition: 1s linear;
